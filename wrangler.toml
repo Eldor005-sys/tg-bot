@@ -1,0 +1,15 @@
+# Cloudflare Worker sozlamasi.
+# Deploy:  npx wrangler deploy   (yoki Worker kodi bilan Dashboard'da qo'lda)
+#
+# Sirlar (Dashboard → Settings → Variables and Secrets, yoki CLI):
+#   BOT_TOKEN      — @BotFather dan olingan token (Encrypted)
+#   WEBHOOK_SECRET — ixtiyoriy random satr, masalan 40 ta belgi (Encrypted)
+# Oddiy o'zgaruvchi:
+#   GROUP_ID       — guruh chat ID (odatiy/plain)
+
+name = "tgbot-video"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+GROUP_ID = "-5293441607"

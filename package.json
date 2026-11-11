@@ -1,0 +1,14 @@
+{
+  "name": "tgbot-video-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "secret:token": "wrangler secret put BOT_TOKEN",
+    "secret:webhook": "wrangler secret put WEBHOOK_SECRET"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
